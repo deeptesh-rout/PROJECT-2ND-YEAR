@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem;
+            color: #333;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #28a745;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .card img:hover {
+            opacity: 0.9;
+        }
+
+        .card-body {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #28a745;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .card-body:hover {
+            background-color: #e8f5e9;
+        }
+
+        /* Unique Font Families for Each Card */
+        .card:nth-child(1) .card-title {
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .card:nth-child(2) .card-title {
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        .card:nth-child(3) .card-title {
+            font-family: 'Times New Roman', serif;
+        }
+
+        .card:nth-child(4) .card-title {
+            font-family: 'Courier New', monospace;
+        }
+
+        .card:nth-child(5) .card-title {
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .card:nth-child(6) .card-title {
+            font-family: 'Lucida Sans', sans-serif;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #1e7e34;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .gallery-container {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .row {
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container gallery-container">
+    <h1 class="text-center mb-5">Lunch Delights</h1>
+    
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.lacademie.com/wp-content/uploads/2022/03/indian-lunch-recipes.jpg" alt="Grilled Chicken Salad">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Chicken Salad</h5>
+                    <p class="card-text">A healthy mix of greens, grilled chicken, and a light dressing. Perfect for a balanced lunch!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?crop=entropy&cs=tinysrgb&w=1200&h=800&fit=crop" alt="Pasta Primavera">
+                <div class="card-body">
+                    <h5 class="card-title">Pasta Primavera</h5>
+                    <p class="card-text">Colorful vegetables tossed in a light and creamy sauce with perfectly cooked pasta.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://c.ndtvimg.com/2022-04/fq5cs53_biryani-doubletree-by-hilton_625x300_12_April_22.jpg" alt="Grilled Sandwich">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Grilled Sandwich</h5>
+                    <p class="card-text">Golden, crispy bread stuffed with cheese, veggies, and your favorite condiments.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.thespruceeats.com/thmb/232PktXa7ua4fRndz20BhaBUwrc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-163602832-57958c2a5f9b58173b2abd8b.jpg" alt="Vegetable Stir Fry">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetable Stir Fry</h5>
+                    <p class="card-text">A medley of fresh vegetables sautéed in a flavorful soy-garlic sauce. Light and tasty!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://cdn.vox-cdn.com/thumbor/6HSlxaJ0HcHiTSk-DflAoU5J3eE=/0x0:1600x1067/620x465/filters:focal(672x406:928x662):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66266390/52324788850_6521b41945_h.28.jpg" alt="Chicken Curry">
+                <div class="card-body">
+                    <h5 class="card-title">Hearty Chicken Curry</h5>
+                    <p class="card-text">A flavorful curry served with steaming rice or fresh naan. A satisfying lunch option!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/5i-bxEJFaWTU4bG7Y7pIhe89BFg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Ricotta-Polpette-FT-RECIPE0723-420aee27e58a410080366740cd1aa08c.jpg" alt="Mediterranean Wrap">
+                <div class="card-body">
+                    <h5 class="card-title">Mediterranean Wrap</h5>
+                    <p class="card-text">A delicious wrap filled with hummus, falafel, fresh veggies, and tzatziki sauce.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

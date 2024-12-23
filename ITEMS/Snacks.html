@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks Gallery</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Card Styles */
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Fonts for Different Sections */
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffc107;
+            color: #fff;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e0a800;
+            transform: translateY(-3px);
+        }
+
+        .gallery-container {
+            margin-top: 50px;
+            padding: 0 15px;
+        }
+
+        .gallery-container h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .card-title {
+                font-size: 1.25rem;
+            }
+
+            .gallery-container h1 {
+                font-size: 2rem;
+            }
+
+            .card img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container gallery-container">
+    <h1 class="text-center mb-5">Snack Time Treats</h1>
+    
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.shutterstock.com/image-photo/selective-focus-samosa-spiced-potatofilled-260nw-2450430319.jpg" alt="Samosa">
+                <div class="card-body">
+                    <h5 class="card-title">Samosa</h5>
+                    <p class="card-text">Samosas are a classic snack filled with a spicy potato and pea mixture wrapped in crispy golden pastry. Often served with tangy tamarind or mint chutney, this beloved street food is perfect for any time of the day.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.shutterstock.com/image-photo/selective-focus-samosa-spiced-potatofilled-260nw-2450430319.jpg" alt="Smoothie Bowl">
+                <div class="card-body">
+                    <h5 class="card-title">Smoothie Bowl</h5>
+                    <p class="card-text">This colorful smoothie bowl is made from a blend of fresh fruits such as bananas, strawberries, and blueberries. Topped with crunchy granola, coconut flakes, and chia seeds, it's a healthy and delicious treat to start your day.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://t3.ftcdn.net/jpg/08/65/66/80/240_F_865668088_rWDJ8rVIqCqFQ78cncMUax3FaBnnB8t9.jpg" alt="Veggie Spring Rolls">
+                <div class="card-body">
+                    <h5 class="card-title">Veggie Spring Rolls</h5>
+                    <p class="card-text">Crispy on the outside and bursting with flavor, these spring rolls are packed with fresh vegetables and spices. Serve them with a sweet chili or soy dipping sauce for the ultimate appetizer experience.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

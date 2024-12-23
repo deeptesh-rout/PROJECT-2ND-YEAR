@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+            padding: 30px 0;
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            margin-top: 30px;
+        }
+
+        /* Card Styling */
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: #fff;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            padding: 25px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        /* Card Title */
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Card Text */
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 30px;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .card-title {
+                font-size: 1.2rem;
+            }
+
+            .card-text {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container gallery-container">
+    <h1 class="text-center mb-5">Breakfast Delights</h1>
+    
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/plus/fullset/2020/04/30/0/FNK_The-Best-Cheddar-And-Herb-Chaffle_H_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1588257306685.jpeg" alt="Cheddar and Herb Chaffle">
+                <div class="card-body">
+                    <h5 class="card-title">Cheddar and Herb Chaffle</h5>
+                    <p class="card-text">Start your day with this crispy, cheesy delight. Perfect for a quick and hearty breakfast!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/wHbcU8Shxr8l2ErYsAzpuYg_xOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-pancakes-FT-RECIPE0521-4ed2171f80564bd880f3f36aad045255.jpg" alt="Quinoa Pancakes">
+                <div class="card-body">
+                    <h5 class="card-title">Fluffy Quinoa Pancakes</h5>
+                    <p class="card-text">Healthy, protein-packed pancakes to fuel your morning. Top with fresh fruit for extra flavor!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/wHbcU8Shxr8l2ErYsAzpuYg_xOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-pancakes-FT-RECIPE0521-4ed2171f80564bd880f3f36aad045255.jpg" alt="Quinoa Pancakes">
+                <div class="card-body">
+                    <h5 class="card-title">Fluffy Quinoa Pancakes</h5>
+                    <p class="card-text">Healthy, protein-packed pancakes to fuel your morning. Top with fresh fruit for extra flavor!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/wHbcU8Shxr8l2ErYsAzpuYg_xOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-pancakes-FT-RECIPE0521-4ed2171f80564bd880f3f36aad045255.jpg" alt="Quinoa Pancakes">
+                <div class="card-body">
+                    <h5 class="card-title">Fluffy Quinoa Pancakes</h5>
+                    <p class="card-text">Healthy, protein-packed pancakes to fuel your morning. Top with fresh fruit for extra flavor!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/wHbcU8Shxr8l2ErYsAzpuYg_xOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-pancakes-FT-RECIPE0521-4ed2171f80564bd880f3f36aad045255.jpg" alt="Quinoa Pancakes">
+                <div class="card-body">
+                    <h5 class="card-title">Fluffy Quinoa Pancakes</h5>
+                    <p class="card-text">Healthy, protein-packed pancakes to fuel your morning. Top with fresh fruit for extra flavor!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/wHbcU8Shxr8l2ErYsAzpuYg_xOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-pancakes-FT-RECIPE0521-4ed2171f80564bd880f3f36aad045255.jpg" alt="Quinoa Pancakes">
+                <div class="card-body">
+                    <h5 class="card-title">Fluffy Quinoa Pancakes</h5>
+                    <p class="card-text">Healthy, protein-packed pancakes to fuel your morning. Top with fresh fruit for extra flavor!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/wHbcU8Shxr8l2ErYsAzpuYg_xOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-pancakes-FT-RECIPE0521-4ed2171f80564bd880f3f36aad045255.jpg" alt="Quinoa Pancakes">
+                <div class="card-body">
+                    <h5 class="card-title">Fluffy Quinoa Pancakes</h5>
+                    <p class="card-text">Healthy, protein-packed pancakes to fuel your morning. Top with fresh fruit for extra flavor!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.foodandwine.com/thmb/wHbcU8Shxr8l2ErYsAzpuYg_xOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-pancakes-FT-RECIPE0521-4ed2171f80564bd880f3f36aad045255.jpg" alt="Quinoa Pancakes">
+                <div class="card-body">
+                    <h5 class="card-title">Fluffy Quinoa Pancakes</h5>
+                    <p class="card-text">Healthy, protein-packed pancakes to fuel your morning. Top with fresh fruit for extra flavor!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Breakfast_at_the_Black_Bear_Diner.jpg" alt="Hearty Breakfast Platter">
+                <div class="card-body">
+                    <h5 class="card-title">Hearty Breakfast Platter</h5>
+                    <p class="card-text">A classic breakfast with eggs, bacon, and toast. A fulfilling start to any day!</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Cards Go Here -->
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

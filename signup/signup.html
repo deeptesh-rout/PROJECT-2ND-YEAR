@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form Design</title>
+
+  <style>
+	@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap");
+
+::-webkit-scrollbar,
+img::selection,
+br,
+a::selection,
+h1::selection {
+	background: none;
+	display: none;
+	pointer-events: none;
+}
+
+* {
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+	color: black;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Poppins", system-ui, sans-serif;
+	background: none;
+	border: none;
+	outline: none;
+	font-family: "Host Grotesk", sans-serif;
+}
+
+body {
+	width: 100vw;
+	min-height: 500px;
+	height: 100vh;
+	display: grid;
+	place-content: center;
+	background: #ccc;
+}
+
+section {
+	display: flex;
+	max-height: 480px;
+	min-height: 480px;
+	height: 90vh;
+	max-width: 800px;
+	width: 90vw;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#cover {
+	flex: 1;
+	height: 100%;
+	position: relative;
+}
+
+#cover * {
+	color: #eee;
+}
+
+#icon {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+	filter: invert(1);
+}
+
+#sliderContainer {
+	width: 100%;
+	height: 100%;
+}
+
+#sliderContainer div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#sliderContainer h1 {
+	position: absolute;
+	top: 50%;
+	width: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#sliderContainer .about {
+	position: absolute;
+	bottom: 50px;
+	width: 70%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+.controlLabels {
+	display: flex;
+	justify-content: end;
+	gap: 7px;
+}
+
+.controlLabels label {
+	border: 0.5px solid #fff;
+	opacity: 0.7;
+	width: 30px;
+	height: 30px;
+	display: grid;
+	place-content: center;
+	border-radius: 50px;
+	padding-bottom: 4px;
+	cursor: pointer;
+}
+
+#sliderContainer #model1,
+#sliderContainer #model2,
+#sliderContainer #model3,
+#sliderContainer #model4 {
+	display: none;
+}
+
+#slide1:checked ~ #sliderContainer #model1,
+#slide2:checked ~ #sliderContainer #model2,
+#slide3:checked ~ #sliderContainer #model3,
+#slide4:checked ~ #sliderContainer #model4 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+}
+
+#sliderContainer div img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(1.5px) brightness(0.9);
+}
+
+#loginForm {
+	width: 300px;
+	height: 100%;
+	padding-top: 80px;
+	background: #fff;
+	padding-inline: 25px;
+	white-space: nowrap;
+}
+
+#createAccountForm {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-inline: auto;
+	margin-block: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+	flex: 1;
+	padding: 7px 10px;
+	font-size: 1em;
+	width: 100%;
+	border: 0.5px solid #eee;
+	border-radius: 7px;
+}
+
+input:focus {
+	border: 0.5px solid #333;
+}
+
+button {
+	font-size: 0.9em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-weight: bold;
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+#createAccount {
+	color: #eee;
+	background: #0f1823;
+}
+
+.login {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.login *,
+small {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 0.8em;
+	opacity: 0.7;
+}
+
+a {
+	opacity: 1;
+}
+
+small {
+	font-size: 0.7em;
+}
+
+@media (max-width: 650px) {
+	section {
+		width: 300px;
+	}
+
+	#cover {
+		display: none;
+	}
+}
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+	<div id="cover">
+		<img draggable="false" src="https://i.pinimg.com/736x/cb/20/60/cb206047101b354898b36e564a33cc65.jpg" alt="logo" id="icon" width="40" style="mix-blend-mode: color-dodge;">
+
+		<input type="radio" name="controler" id="slide1" hidden checked>
+		<input type="radio" name="controler" id="slide2" hidden>
+		<input type="radio" name="controler" id="slide3" hidden>
+		<input type="radio" name="controler" id="slide4" hidden>
+
+		<div id="sliderContainer">
+			<div id="model1">
+				<h1>"NoName has become an essential tool in our workflow, helping us create stunning websites effortlessly."</h1>
+				<span class="about">
+					<div class="controlLabels">
+						<label for="slide4" class="before">←</label>
+						<label for="slide2" class="after">→</label>
+					</div>
+				</span>
+				<img draggable="false" src="https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?s=612x612&w=0&k=20&c=eaKRSIAoRGHMibSfahMyQS6iFADyVy1pnPdy1O5rZ98=" alt="model1" id="imgModel1" width="110" height="150" style="object-fit: cover">
+			</div>
+			<div id="model2">
+				<h1>"Since incorporating NoName into our process, every project feels more streamlined and efficient."</h1>
+				<span class="about">
+					<div class="controlLabels">
+						<label for="slide1" class="before">←</label>
+						<label for="slide3" class="after">→</label>
+					</div>
+				</span>
+				<img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMyzfmXp2bWMGCMLw2JC4uXpXR1qEGTCBvw&s" alt="model2" id="imgModel2" width="110" height="150" style="object-fit: cover">
+			</div>
+			<div id="model3">
+				<h1>"We rely on NoName for every new design, and it’s made a huge difference in our productivity."</h1>
+				<span class="about">
+					<div class="controlLabels">
+						<label for="slide2" class="before">←</label>
+						<label for="slide4" class="after">→</label>
+					</div>
+				</span>
+				<img draggable="false" src="https://media.istockphoto.com/id/1457433817/photo/group-of-healthy-food-for-flexitarian-diet.webp?b=1&s=612x612&w=0&k=20&c=V8oaDpP3mx6rUpRfrt2L9mZCD0_ySlnI7cd4nkgGAb8=" alt="model3" id="imgModel3" width="110" height="150" style="object-fit: cover">
+			</div>
+			<div id="model4">
+				<h1>"NoName is the backbone of our design process, and we couldn’t imagine working without it."</h1>
+				<span class="about">
+					<div class="controlLabels">
+						<label for="slide3" class="before">←</label>
+						<label for="slide1" class="after">→</label>
+					</div>
+				</span>
+				<img draggable="false" src="https://media.istockphoto.com/id/1164088769/photo/vegan-health-food-for-a-healthy-life.jpg?s=612x612&w=0&k=20&c=fbXAzI5BYm6vOIpVRv2sYPlL9ZvaBCY6kvGQ0tOijmQ=" alt="model4" id="imgModel4" width="110" height="150" style="object-fit: cover">
+			</div>
+		</div>
+	</div>
+	<div id="loginForm">
+		<h1>Create an account</h1>
+		<small>Let's get started with your 30 days free trial.</small>
+		<form id="createAccountForm">
+			<input type="text" name="name" id="name" placeholder="Name" required>
+			<input type="email" name="email" id="email" placeholder="Email" required>
+			<input type="password" name="password" id="password" placeholder="Password" required>
+			<a href="signupSuccess.html" id="createAccount" style="display: block; text-align: center; padding: 10px; font-size: 0.9em; font-weight: bold; color: white; background: #0f1823; border-radius: 7px; text-decoration: none;">Create account</a>
+			<button type="button" id="googleLogin">
+				<img draggable="false" src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Google" width="14">
+				Sign up with Google</button>
+		</form>
+		<span class="login">
+			<p>Already have an account? </p><a id="login">Log in</a>
+		</span>
+	</div>
+</section>
+<!-- partial -->
+  
+</body>
+</html>

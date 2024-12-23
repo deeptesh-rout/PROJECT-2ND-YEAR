@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        h1 {
+            font-size: 2.5rem;
+            color: #a72890;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
+        .gallery-container {
+            margin-top: 50px;
+        }
+    
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+    
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+    
+        .card img {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+            border-bottom: 3px solid #a72890;
+        }
+    
+        .card-body {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+        }
+    
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+    
+        .btn {
+            background-color: #a72890;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease-in-out;
+        }
+    
+        .btn:hover {
+            background-color: #801570;
+            color: #fff;
+        }
+    
+        @media (max-width: 768px) {
+            .card img {
+                height: 180px;
+            }
+    
+            .card-title {
+                font-size: 1.25rem;
+            }
+    
+            .card-text {
+                font-size: 0.9rem;
+            }
+    
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+<div class="container gallery-container">
+    <h1 class="text-center mb-5">Dinner Delicacies</h1>
+    
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqtqf1--q2UCYnMlJES56FxpR3s1M-YNfs8g&s">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://static.toiimg.com/photo/74984407.cms?width=500&resizemode=4&imgsize=1699947">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.simplyrecipes.com/thmb/A7mqmFJEeAsOoZ0VuHaiUciA0K0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Unstuffed-Peppers-LEAD-4-eaeaba3e3e914f428b747104600624b5.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.acouplecooks.com/wp-content/uploads/2023/01/Vegan-Stir-Fry-006.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/romantic-dinner-ideas-thai-style-peanut-chicken-wraps-1609187313.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-06/11/14/asset/dcb5220da65d/sub-buzz-86-1591886919-8.jpg?downsize=900:*&output-format=auto&output-quality=auto">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/easy-dinner-recipes-chili-mac-and-cheese-6721330c2edff.jpg?crop=1xw:1xh;center,top&resize=980:*">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2020/03/1-cheater-s-skillet-paella.jpg?fit=680%2C860">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqtqf1--q2UCYnMlJES56FxpR3s1M-YNfs8g&s">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <p class="card-text">Tender and flavorful salmon fillet served with a side of roasted vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.budgetbytes.com/wp-content/uploads/2021/10/One-Pot-Veggie-Pasta-bowl.jpg" alt="Steak and Potatoes">
+                <div class="card-body">
+                    <h5 class="card-title">Steak and Potatoes</h5>
+                    <p class="card-text">Juicy steak paired with garlic mashed potatoes for a hearty dinner.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.budgetbytes.com/wp-content/uploads/2021/10/One-Pot-Veggie-Pasta-bowl.jpg" alt="Vegetarian Pasta">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">A vibrant medley of vegetables tossed with perfectly cooked pasta.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxl_V7-odWdlwqUBm4AEkv-jJ50XUOUXaIdQ&s" alt="BBQ Ribs">
+                <div class="card-body">
+                    <h5 class="card-title">BBQ Ribs</h5>
+                    <p class="card-text">Slow-cooked ribs slathered in tangy barbecue sauce for ultimate indulgence.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.shutterstock.com/image-photo/sushi-platter-vibrant-fresh-restaurant-260nw-2497859739.jpg" alt="Sushi Platter">
+                <div class="card-body">
+                    <h5 class="card-title">Sushi Platter</h5>
+                    <p class="card-text">An assortment of sushi rolls with fresh seafood and crisp vegetables.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXeaKxuR_cXcD-4m5wvuPey_keeX9idLNHw&s" alt="Classic Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Burger</h5>
+                    <p class="card-text">A juicy beef patty topped with cheese, lettuce, and tomato on a toasted bun.</p>
+                    <a href="#" class="btn" target="_blank">See Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
