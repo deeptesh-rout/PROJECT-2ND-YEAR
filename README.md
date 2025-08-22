@@ -1,85 +1,91 @@
-# Restaurant Website  
 
+# 🍽️ Restaurant Website  
 
 ## 🔖 Overview  
+The **Restaurant Website** is a modern and elegant platform designed to give visitors an immersive online dining experience.  
+It showcases the restaurant’s **menu, ambiance, and services**, while offering a clean and intuitive interface.  
 
-This project is a comprehensive **Restaurant Website** designed to provide visitors with an engaging and immersive online experience.  
-The site effectively captures the essence of the restaurant's identity, showcasing its menu, ambiance, and services.  
-The primary goal of this project is to deliver an intuitive and aesthetically pleasing platform that appeals to food enthusiasts and potential customers alike.  
-It also serves as an essential tool for the restaurant to enhance its online presence and connect with its audience.  
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Key Highlights:  
-- **Elegant Design**: A visually appealing layout to attract users and retain their attention.  
-- **User-Friendly Navigation**: Seamless navigation across different pages and sections.  
-- **Rich Media Content**: High-quality images and detailed descriptions to showcase the restaurant’s offerings.  
-- **Responsive Layout**: Ensures optimal viewing on desktops, tablets, and smartphones.  
-- **Call-to-Action Elements**: Encourages users to subscribe, contact, or visit the restaurant.  
+---
 
+## ✨ Key Highlights  
+- 🎨 **Elegant Design** – Eye-catching and engaging layout.  
+- 🧭 **User-Friendly Navigation** – Smooth page transitions.  
+- 🖼️ **Rich Media Content** – High-quality images and dish descriptions.  
+- 📱 **Responsive Layout** – Works on desktop, tablet, and mobile.  
+- 📢 **Clear CTAs** – Encourages subscriptions, inquiries, and visits.  
 
-## ✨ Features  
+---
 
-- **Home Page**: Displays the restaurant's branding and highlights.  
-- **Menu Page**: Lists the food items with descriptions and prices.  
-- **Contact Section**: Provides contact details and location.  
-- **Responsive Design**: Optimized for various screen sizes.  
-- **Image Gallery**: Highlights the restaurant's ambiance and dishes with high-quality images.  
-- **Subscription Form**: Allows users to subscribe for updates and offers.  
+## 🌟 Features  
+- 🏠 **Home Page** – Branding and highlights.  
+- 🍴 **Menu Page** – Food items with names, descriptions, and prices.  
+- 📞 **Contact Section** – Address, phone, and email.  
+- 💻 **Responsive Design** – Mobile-friendly.  
+- 📸 **Image Gallery** – Showcase ambiance and dishes.  
+- 📰 **Subscription Form** – Stay updated with offers.  
 
+---
 
 ## 🚀 Technologies Used  
+- ⚡ **HTML5** – Structure.  
+- 🎨 **CSS3** – Styling.  
+- 🖌️ **Bootstrap** – Responsive UI.  
+- ⚙️ **jQuery** – Interactive features.  
 
-- **HTML**: For structuring the content.  
-- **CSS**: For styling and layout design.  
-- **Bootstrap**: For a responsive and modern UI framework.  
-- **jQuery**: For dynamic and interactive functionalities.  
+---
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 📂 File Structure  
 
-## 📁 File Structure  
+```
 
-Project  
-|
-├── index.html                           # Main page  
-├── style.css                            # Main stylesheet 
-|         
-├── /ITEMS                               
-│   ├── Breakfast.html                   #Breakfast
-│   ├── Lunch.html                       #Lunch
-│   ├── Snacks.html                      #Snacks
-│   ├── Dinner.html                      #Dinner
-| 
-├── /signup  
-│   ├── signup.html                      #Signup page
-│   └── signupSuccess.html               #Signup successfull
-|  
-├── /SUBSCRIBE  
-│   ├── subscribe.html                   # subscribe page
-│   └── subscribeSuccess.html            # Subscription successfull
-```  
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## 🛠️ How to Run the Project  
+Project
+│
+├── index.html                  # Main landing page
+├── style.css                   # Main stylesheet
+│
+├── /ITEMS                      # Food category pages
+│   ├── Breakfast.html
+│   ├── Lunch.html
+│   ├── Snacks.html
+│   └── Dinner.html
+│
+├── /signup                     # Signup pages
+│   ├── signup.html
+│   └── signupSuccess.html
+│
+└── /SUBSCRIBE                  # Subscription pages
+├── subscribe.html
+└── subscribeSuccess.html
 
-1. **Clone or Download** this repository to your local machine.  
-2. Open the `index.html` file in any web browser.  
-3. Navigate through the website using the links provided.  
+````
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-## 🎯 Future Improvements  
+## 🛠️ How to Run  
+1. Clone or download the repository.  
+   ```bash
+   git clone <repository-link>
+````
 
-- Add JavaScript for interactive features like animations or form validation.  
-- Implement a backend to handle dynamic content (e.g., menu updates).  
-- Integrate maps for a detailed restaurant location view.  
-- Enhance the gallery with a slideshow or lightbox functionality.  
-- Add multilingual support for broader accessibility.  
+2. Open the folder.
+3. Run `index.html` in any browser.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-## 📞 Contact  
+## 🎯 Future Enhancements
 
-This project is a collaborative effort by the following team members:  
+* ✨ JavaScript animations & form validation.
+* 🗄️ Backend for dynamic menu updates.
+* 🗺️ Google Maps integration.
+* 🖼️ Slideshow/lightbox gallery.
+* 🌍 Multilingual support.
 
-- **DEEPTESH ROUT**  
-  Registration Number: 2341018166  
+---
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 📞 Contact
+
+👨‍💻 **Deeptesh Rout**
+📌 Registration Number: **2341018166**
+
+---
+
